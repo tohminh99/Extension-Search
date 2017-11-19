@@ -14,6 +14,12 @@ var createnewtab = browser.tabs.create
 ({url: 'https://www.themoviedb.org/search?query='+input});
 createnewtab.then(onError);
 }
+else if (e==2)
+{
+    var createnewtab = browser.tabs.create
+    ({url: 'https://www.allmusic.com/search/all/'+input});
+    createnewtab.then(onError);
+    }
 else
 {
     var createnewtab = browser.tabs.create
